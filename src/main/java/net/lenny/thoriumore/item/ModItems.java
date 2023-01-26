@@ -13,6 +13,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item CITRINE = registerItem("citrine",
     new Item(new FabricItemSettings()));
+    public static final Item RAW_CITRINE = registerItem("raw_citrine",
+    new Item(new FabricItemSettings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(ThoriumOre.MOD_ID, name), item);
     }
@@ -21,7 +23,8 @@ public class ModItems {
         addItemsToItemGroup();
     }
     public static void addItemsToItemGroup(){
-        addToItemGroup(ItemGroups.INGREDIENTS, CITRINE);
+        addToItemGroup(ModItemGroup.CITRINE, CITRINE);
+        addToItemGroup(ModItemGroup.CITRINE, RAW_CITRINE);
     }
     private static void addToItemGroup(ItemGroup group, Item item){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

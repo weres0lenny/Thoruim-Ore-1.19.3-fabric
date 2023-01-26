@@ -2,6 +2,7 @@ package net.lenny.thoriumore;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.lenny.thoriumore.item.ModItemGroup;
 import net.lenny.thoriumore.item.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -18,5 +19,6 @@ public class ThoriumOre implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModItemGroup.registerItemGroups();
 	}
 }
