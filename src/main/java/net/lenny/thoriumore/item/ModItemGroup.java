@@ -10,8 +10,6 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
     public static ItemGroup CITRINE;
     public static void registerItemGroups(){
-        CITRINE = FabricItemGroup.builder(new Identifier(ThoriumOre.MOD_ID,"citrine"))
-                .displayName(Text.translatable("itemgroup.citrine"))
-            .icon(()->new ItemStack(ModItems.CITRINE)).build();
+        CITRINE = FabricItemGroup.builder(new Identifier(ThoriumOre.MOD_ID,"citrine")).displayName(Text.translatable("itemgroup.citrine")).icon(()->new ItemStack(ModItems.CITRINE)).build();
     }
 }
