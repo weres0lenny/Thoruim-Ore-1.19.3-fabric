@@ -15,10 +15,6 @@ import static net.lenny.thoriumore.item.ModItems.CITRINE;
 public class ThoriumOre implements ModInitializer {
 	public static final String MOD_ID = "thoriumore";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
-
-
-
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
