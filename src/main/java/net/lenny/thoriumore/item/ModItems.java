@@ -25,4 +25,4 @@ public class ModItems {
     }
     private static void addToItemGroup(ItemGroup group, Item item){
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-}
+}}
